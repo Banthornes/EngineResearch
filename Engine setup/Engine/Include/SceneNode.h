@@ -2,18 +2,14 @@
 
 namespace ENG
 {
-#ifdef _WIN32
-	__interface Light;
-	__interface Model;
-	__interface SceneNode
-#elif
 	class Light;
 	class Model;
 	class SceneNode
-#endif
 	{
 	public:
-		Light& AddLight();
-		Model& AddModel();
+		virtual std::string& GetName() = 0;
+
+		virtual Light& AddLight() = 0;
+		virtual Model& AddModel() = 0;
 	};
 }

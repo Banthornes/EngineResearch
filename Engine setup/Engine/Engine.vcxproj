@@ -92,7 +92,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <AdditionalIncludeDirectories>Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -107,7 +107,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <AdditionalIncludeDirectories>Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -124,7 +124,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <AdditionalIncludeDirectories>Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -143,7 +143,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <AdditionalIncludeDirectories>Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -155,13 +155,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Core\ModelLoader.h" />
+    <ClInclude Include="Include\SceneManager.h" />
     <ClInclude Include="Core\TextureLoader.h" />
     <ClInclude Include="Include\Engine.h" />
     <ClInclude Include="Include\Light.h" />
     <ClInclude Include="Include\Material.h" />
     <ClInclude Include="Include\Mesh.h" />
     <ClInclude Include="Include\Model.h" />
-    <ClInclude Include="Include\Scene.h" />
+    <ClInclude Include="Core\Scene.h" />
     <ClInclude Include="Include\SceneNode.h" />
     <ClInclude Include="Include\Shader.h" />
     <ClInclude Include="Core\ShaderLoader.h" />
@@ -177,6 +178,7 @@
     <ClCompile Include="Core\Mesh.cpp" />
     <ClCompile Include="Core\Model.cpp" />
     <ClCompile Include="Core\Scene.cpp" />
+    <ClCompile Include="Core\SceneManager.cpp" />
     <ClCompile Include="Core\SceneNode.cpp" />
     <ClCompile Include="Core\Shader.cpp" />
     <ClCompile Include="Core\stdafx.cpp">
